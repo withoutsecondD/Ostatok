@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/lastdatabase?currentSchema=ostatok
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+  flyway:
+    user: postgres
+    password: postgres
+    locations: classpath:db/migration
